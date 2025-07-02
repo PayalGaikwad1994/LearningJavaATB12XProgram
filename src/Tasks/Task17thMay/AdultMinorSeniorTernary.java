@@ -6,7 +6,8 @@ package Tasks.Task17thMay;
 
 public class AdultMinorSeniorTernary {
     public static void main(String[] args)  {
-        int age = 75;
+        String UserInput = args[2];
+        int age = Integer.parseInt(UserInput);
         String result = (age < 18) ? "Minor" : (age >= 18 && age < 65) ? "Adult" : "Senior";
         System.out.println(result);
     }
